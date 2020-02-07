@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="aboutus.css" title="Modern" media="screen" type="text/css"?>
+<team_details>
+<member>
+<name>Ankita Singh</name>
+<designation>Support and PR Head</designation>
+<description>Takes care of the support department and manages public relation.</description>
+</member>
+<member>
+<name>Ayushi Tiwari</name>
+<designation>Administrator And Manager</designation>
+<description>Administers the services and handles analytics and revenue.</description>
+</member>
+<member>
+<name>Pooja Mandavkar</name>
+<designation>Lead Developer</designation>
+<description>Incorporate the core development of the service and adds new features.</description>
+</member>
+<member>
+<name>Kajal Pawar</name>
+<designation>Developer</designation>
+<description>Tests and adds new features and tailors the user experiences.</description>
+</member>
+</team_details>
