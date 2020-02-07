@@ -1,0 +1,87 @@
+(function Validate() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("cpassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+     
+    });
+    
+  
+
+   function maxLengthCheck(){
+    var phone = document.getElementById("phoneNumber").value;         
+    var stripped = phone.replace(/[\(\)\.\-\ \''\""\.]/g, '');
+
+   if (stripped == "") {
+        error = "You didn't enter a phone number.";
+    }
+     else if (isNaN(parseInt(stripped))) {
+        phone = "";
+        alert("The phone number contains illegal characters.");
+
+    } else if (!(stripped.length == 10)) {
+        phone = "";
+        alert("The phone number should have only 10 digits. Make sure you included an area code.\n");
+    }
+  
+    $(function(){
+        $('#register').click(function(e){
+
+            var valid = this.form.checkValidity();
+
+            if(valid){
+
+
+            var firstname   = $('#firstName').val();
+            var lastname    = $('#lastName').val();
+            var email       = $('#email').val();
+            var password    = $('#password').val();
+            var birthDate   = $('#birthDate').val();
+            var phonenumber = $('#phoneNumber').val();
+            var address     = $('#address').val();
+            var country     = $('#country').val();
+            var gender      = $('#gender').val();
+            
+            
+            
+            
+
+                e.preventDefault(); 
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'process.php',
+                    data: {firstname: firstname,lastname: lastname,email: email,phonenumber: phonenumber,addr:address,gender:gender,dob:dob,country:country,password: password},
+                    success: function(data){
+                    Swal.fire({
+                                'title': 'Successful',
+                                'text': data,
+                                'type': 'success'
+                                })
+                            
+                    },
+                    error: function(data){
+                        Swal.fire({
+                                'title': 'Errors',
+                                'text': 'There were errors while saving the data.',
+                                'type': 'error'
+                                })
+                    }
+                });
+
+                
+            }else{
+                
+            }
+
+            
+
+
+
+        });     
+
+        
+    });

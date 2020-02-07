@@ -1,0 +1,304 @@
+ 
+body{
+    background-color: #5C9FE2;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: all;
+
+}
+#wrapper{ font-family:tahoma; }
+
+
+
+}
+/*top hori subheader*/
+
+/*logo styling*/
+#main-header{
+	width: 100%;
+	height: 100px;
+	
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 80px;
+
+}
+#logo{ margin-top: -40px;
+   float: left;
+}
+
+/* NAVIGATION BAR styling*/
+#navigation{
+	width: 900px;
+	height: 35px;
+	margin-top: 55px;
+	margin-bottom: 50px;
+	float: right;
+	; 
+
+}
+nav{
+	width: 1280px;
+	margin: 5px auto;
+}
+nav a{
+	margin-left: 35px;
+	margin-top: 80px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+
+}
+nav a:hover{
+	color: #000;
+	transition: all .7s ease;}
+
+
+#slider{
+	width: 100%;
+	max-width: 100%;
+	float: left;
+}
+
+.bx-wrapper .bx-viewport {
+	margin-top: 0;
+
+}
+
+.bx-wrapper .bx-pager , .bx-wrapper .bx-controls-auto{
+	bottom: 20px;
+
+}
+
+.bx-wrapper .bx-pager .bx-default-pager a {
+	width: 15px;
+	height: 15px;
+	border-radius: 20px;
+
+}
+/*======= Category/Products heading===*/
+#heading-block{
+	width: 100%;
+	height: auto;
+	float: left;
+	color: black; 
+	font-size: 22px;
+}
+#heading-block h2{
+	line-height: 35px;
+	border-left: 20px solid;
+	padding-left: 8px;
+}
+
+/*      table     */
+#table{
+	 border-collapse: collapse;
+
+}
+
+/*=== SUbProducts====*/
+#heading2-block{
+	width: 100%;
+	height: auto;
+	float: left;
+	color: blue; 
+	font-size: 15px;
+}
+#heading2-block h2{
+	line-height: 35px;
+	border-left: 11px solid;
+	padding-left: 15px;
+}
+/*=== CAtegory boxes======*/
+.catbox{
+	width: 230px;
+	height: 230px;
+	float: left;
+	overflow: hidden;
+	position: relative;
+	margin: 0 10px 25px;
+}
+
+.catbox span{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	background: rgba(0,0,0,0.6);
+	color: white;
+	text-shadow: black;
+	display: block;
+	bottom: 30px;
+	position: absolute;
+	z-index: 999;
+	text-align: center;
+
+}
+.catbox span:hover {
+	color: cyan;
+	transition: all .5s ease;
+
+}
+.catbox img{
+	max-width: 100%;
+	
+}
+.catbox img:hover{
+	transform: scale(1.2,1.2);
+	transition: all .5s ease;
+}
+
+/* this is for products styling*/
+.prod-box{
+	width: 235px;
+	height: 300px;
+	overflow: hidden;
+	margin: 0 18 30 0;
+	position: relative;
+	float: left;
+
+}
+
+.prod-box>img{
+	max-width: 100%;
+
+}
+.prod-trans{
+	background:rgba(0,0,0,0.6); ;
+	width: 100%;
+	height: 100%;
+	padding: 10 15 15 10;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	opacity: 0;
+	transition: all 0.5s ease;
+    cursor: pointer;
+}
+.prod-box:hover .prod-trans{
+	opacity: 1;
+	transition: all .5s ease;
+}
+
+.prod-feature{
+	text-align: center;
+	margin-left: -12px;
+	transition: all .5s ease;
+
+}
+.prod-feature p{
+	color: yellow;
+	font-family: verdana;
+}
+.prod-box:hover .prod-feature{
+	margin-left: 12px;
+	transition: all .5s ease;
+
+}
+
+.prod-feature input{
+	width: 150px;
+	float: left;
+}
+
+#daburimg{
+	width: 100%;
+	height: 100%;
+}
+
+.cart_button{
+  background-color: rgba(242, 230, 66,1) ;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: blue;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  
+  cursor: pointer;
+}
+.cart_button:hover {
+	background-color: #34E8E2;
+	transition: all .5s ease;
+}
+/*
+.offer{
+	width: 420px;
+	float: left;
+	margin-right: 10px;
+}
+.offer img{
+	width: 100%;
+
+}
+*/
+#footer{
+	width: 100%;
+	height: auto;
+	background:none;
+	border-top:2px double ;
+	border-top-color: black;
+	float: left;
+}
+.footer_sub{
+	width: 25%;
+	float: left;
+}
+.footer_sub2{
+	width: 20%;
+	float: left;
+
+}
+.footer_sub2 ul li{
+	list-style: none;
+}
+
+.footer_sub2 ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+.footer_sub2 ul li a:hover{
+	color: yellow;
+	text-decoration: underline;
+}
+
+.footer_sub3{
+	width: 35%;
+	float: left;
+}
+.footer_sub3 input{
+
+}
+
+.subs{
+	width: 300px;
+	height: 50px;
+	padding-left: 20px;
+	border: .5px solid black;
+	border-radius: 4px;
+	float: left; 
+
+}
+
+.sub_btn{
+	height: 50px;
+	padding: 15px;
+	/*margin-top: 10px;
+	margin-left: 10px;*/
+	border:1px solid #1c8adb; ;
+	border-radius: 4px;
+	background: #1c8adb;
+	color: white;
+	float: left;
+}
+.sub_p{
+	color: #167BBF;
+	font-style: italic;
+	font-size: 15px;
+	float: left;
+}
